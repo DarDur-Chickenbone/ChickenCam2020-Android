@@ -33,7 +33,7 @@ It is known that passed Snapchat tweaks would result in a ban, for example Caspe
   Doing this there shouldn't be any "from" text and it should look completely normal.
   * Renaming the App
   
-  By default the app is named Camera, meaning if you upload a photo straight to your story it will show "from camera". You are able to rename it to whatever you want though. Keep in mind if you want to be completely stealth the first workaround is for you. Check strings.png to check examples of different names.
+  By default the app is named Camera, meaning if you upload a photo straight to your story it will show "from camera". You are able to rename it to whatever you want though. Keep in mind if you want to be completely stealth the first workaround is for you. **Check stringexamples.png to check examples of different names.**
   1. In Android Studio go to Creative-sample-Act -> res -> values -> strings.xml
   2. Rename Camera to whatever you want
   
