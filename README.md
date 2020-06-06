@@ -14,7 +14,7 @@ People in the past have created similar apps and charged people hundreds of doll
 It is known that passed Snapchat tweaks would result in a ban, for example Casper, Snaptools, etc. However because this is directly from Snapchat's developer kit there is absolutely no chance of being banned. **Keep in mind there is a risk of someone reporting you for uploading something "nasty" -- be careful of who's on your friend's list.**
 
 ## Installation
-*Refer to this video or follow the steps below*
+*Refer to this [video](https://youtu.be/2FkhBCqLKNY) or follow the steps below*
 **Before you even begin install Android Studio and your SDK version, download this zip.**
 1. Create a account at https://kit.snapchat.com/portal/
   2. Create an app (Click Add button) - Only change name. Don't Disable/Enable anything. Click continue.
