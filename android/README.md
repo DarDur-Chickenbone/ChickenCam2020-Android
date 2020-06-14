@@ -1,4 +1,4 @@
-# Creative Kit Android Sample App
+# ChickenCam 2020
 
 To ensure that this test app works, make sure that in the <a href="https://kit.snapchat.com/portal">Snap Kit Portal</a>:
 
