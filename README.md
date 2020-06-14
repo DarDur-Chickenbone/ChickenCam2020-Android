@@ -1,4 +1,11 @@
 # ChickenCam-2020 - ANDROID ONLY
+ 
+ ## Who developed this?
+  I upgraded my friend's app to work with Android Q, fixed bugs, and added a few new features.
+  
+  **Based off of Based off of https://github.com/JReverse/creative-kit-sample**
+  
+Join original developer [Justxn's Server](https://jsnap.re/) for the first Snapchat Web Client (25 Invites per month so be quick!)
 
 ## What is this app?
 By default when uploading a gallery photo to Snapchat either to a friend or story, it will either send via chat or add a annoying watermark to your story. Chickencam eliminates this, by using Snapchat's developer kit you could completely bypass this.
@@ -43,6 +50,5 @@ It is known that passed Snapchat tweaks would result in a ban, for example Caspe
   ### Snapchat limits the size and length of your video
   Snapchat limits the video size to below 10mb and 10 seconds. We could workaround this by compressing the video in the program Handbrake and splitting the video into 10 second clips.
   
-  ## Who developed this?
-  I upgraded my friend's app to work with Android Q, fixed bugs, and added a few new features. **Original [Developer](https://github.com/JReverse)**
+
   
