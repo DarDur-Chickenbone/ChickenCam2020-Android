@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
@@ -34,7 +35,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:background="#000000"
         android:orientation="horizontal">
 
@@ -43,10 +44,10 @@
             android:layout_width="235dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Developed by JReverse | Updated by ChickenCam"
+            android:text="ChickenCam"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF"
+            android:textColor="#FFEB3B"
             android:textSize="16dp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -92,7 +93,8 @@
             android:text="Sticker"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
-            android:textColorLink="#FFFFFF" />
+            android:textColorLink="#FFFFFF"
+            android:textSize="15dp" />
 
         <Switch
             android:id="@+id/send_sticker_option"
@@ -115,7 +117,7 @@
         <TextView
             android:id="@+id/share_button"
             style="@style/ShareButton"
-            android:layout_width="528dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="Upload to Snap"
             android:textSize="18sp"
