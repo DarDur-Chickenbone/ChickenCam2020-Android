@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.snapchat.kit.creativesample"
+          package="com.snapchat.kit.chickencam"
     >
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher_round"
+        android:icon="@drawable/ic_launcher1"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_launcher_round"
+        android:roundIcon="@drawable/ic_launcher1"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         >
@@ -22,9 +22,9 @@
 
             Then you should paste your DEVELOPMENT OAuth2 Client ID on line 25 in "android value"
          -->
-        <meta-data android:name="com.snapchat.kit.sdk.clientId" android:value="" />
+        <meta-data android:name="com.snapchat.kit.sdk.clientId" android:value="992b5b7b-676a-4a5f-890e-2fce599e42c1" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name="com.snapchat.kit.chickencam.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="android.intent.action.VIEW"/>

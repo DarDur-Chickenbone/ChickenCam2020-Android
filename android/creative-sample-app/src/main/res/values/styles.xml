@@ -3,6 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/statusbar</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -37,7 +38,7 @@
         <item name="android:textColor">@color/Optionlabel</item>
         <item name="android:maxLines">1</item>
         <item name="android:gravity">end</item>
-        <item name="android:background">@null</item>
+        <item name="android:background">@color/colorPrimary</item>
     </style>
 
     <style name="ShareButton">
@@ -52,5 +53,7 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <color name="statusbar">#121212</color>
 
 </resources>

@@ -6,11 +6,12 @@ android {
         noCompress 'png'
     }
     defaultConfig {
-        applicationId "com.snapchat.kit.creativesample"
+        applicationId "com.snapchat.kit.chickencam"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode 69
+        android.ndkVersion "21.0.6113669"
+        versionName "69.420"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
