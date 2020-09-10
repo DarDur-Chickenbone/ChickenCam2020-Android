@@ -1,4 +1,4 @@
-# ChickenCam-2020 - ANDROID ONLY
+# ChickenCam-2020 - Android Version
 
 ## What is this app?
 By default when uploading a gallery photo to Snapchat either to a friend or story, it will either send via chat or add a annoying watermark to your story. Chickencam eliminates this, by using Snapchat's developer kit you could completely bypass this.
