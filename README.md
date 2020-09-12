@@ -47,6 +47,9 @@ Because Snapchat requires all their developer apps to say this. You can workarou
 ### Why do my photos/vids have black borders?
 Because you didn't edit them correctly. You need to crop the photos to your phone's dimensions or whatever you prefer. Either Google your device's or take a full screen photo and look at the dimensions. Besides that 9:16 is the *common* aspect ratio.
 
+### Why won't my video upload?
+Because Snapchat limits it to 10sec max and 10mb. Split the video to 10 second parts and compress under 10mb if needed. Sometimes it allows videos to be above 10sec if under 10mb but is vert rare.
+
 ### How do I use custom stickers
 As of now Snapchat only allows pngs on Android whereas iOS gets PNG/GIFs
 
