@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
@@ -118,7 +119,7 @@
             android:editable="false"
             android:gravity="center"
             android:text="    (Optional) Custom Sticker"
-            android:textAlignment="viewStart"
+            android:textAlignment="textStart"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
@@ -145,6 +146,14 @@
         style="@style/Option"
         android:background="#0E0E0E">
 
+        <Button
+            android:id="@+id/button"
+            style="@style/FAQ"
+            android:layout_width="59dp"
+            android:layout_height="56dp"
+            android:layout_gravity="left"
+            android:text="FAQ" />
+
         <TextView
             android:id="@+id/share_button"
             style="@style/ShareButton"
@@ -152,16 +161,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:gravity="left"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/share_button2"
-            style="@style/ShareButton"
-            android:layout_width="56dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:background="@drawable/question_button_background"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -173,13 +172,6 @@
             android:translationX="-2dp"
             android:translationY="2dp"
             app:srcCompat="@drawable/ic_launcher_round" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="72dp"
-            android:layout_height="88dp"
-            android:translationX="6.5dp"
-            app:srcCompat="@drawable/question" />
 
     </FrameLayout>
 

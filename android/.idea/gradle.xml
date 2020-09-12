@@ -11,7 +11,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/chickencam" />
+            <option value="$PROJECT_DIR$/creative-sample-app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

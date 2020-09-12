@@ -26,6 +26,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText mCaptionField;
     private EditText mUrlField;
     private CompoundButton mSendStickerOption;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,6 +116,8 @@ public class MainActivity extends AppCompatActivity {
                 openMediaSelectDialog();
             }
         });
+
+
 
         findViewById(R.id.share_button).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -157,7 +161,22 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity2();
+            }
+        });
     }
+
+    public void openActivity2() {
+        Intent intent = new Intent (MainActivity.this, Activity2.class);
+        startActivity(intent);
+    }
+
+
 
     @Override
     public void onResume() {
@@ -247,6 +266,7 @@ public class MainActivity extends AppCompatActivity {
         mSnapState = SnapState.NO_SNAP;
     }
 
+
     /**
      * Saves the file from the ACTION_PICK Intent locally to {@link #mSnapFile} to be accessed by our FileProvider
      */
@@ -275,6 +295,8 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+
+
     private static void copyFile(InputStream inputStream, File file) throws IOException {
         byte[] buffer = new byte[1024];
         int length;
@@ -286,3 +308,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+
+
+

@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Camera</string>
     <string name="text"></string>
+    <string name="link">
+    <a href="https://www.youtube.com/channel/UC97u9xX9Fh4doYp5pzz26Kw">Youtube</a>
+    </string>
     text.setEnabl
 </resources>
