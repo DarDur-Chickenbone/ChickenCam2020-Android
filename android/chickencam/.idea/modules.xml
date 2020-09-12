@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2011737870/android.iml" filepath="$PROJECT_DIR$/.idea/modules/2011737870/android.iml" group="android" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/creative-sample-app.iml" filepath="$PROJECT_DIR$/.idea/modules/creative-sample-app.iml" group="android/creative-sample-app" />
+    </modules>
+  </component>
+</project>

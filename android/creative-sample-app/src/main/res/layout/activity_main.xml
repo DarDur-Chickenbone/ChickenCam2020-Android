@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#121212"
+        android:gravity="center"
+        android:text="ChickenCam"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/snap_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/select_snap" />
+
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside" />
+
+        <com.snapchat.kit.chickencam.SnapVideoView
+            android:id="@+id/video_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#121212"
+        android:orientation="horizontal" />
+
+    <LinearLayout style="@style/Option">
+
+        <TextView
+            style="@style/Option.Label"
+            android:layout_width="79dp"
+            android:background="#121212"
+            android:text="Text"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/caption_field"
+            style="@style/Option.Field"
+            android:background="#202020"
+            android:hint="(Optional) Enter a snap caption"
+            android:inputType="text"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Option"
+        android:background="#202020">
+
+        <TextView
+            style="@style/Option.Label"
+            android:layout_width="79dp"
+            android:background="#121212"
+            android:text="URL"
+            android:textAlignment="textStart"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/url_field"
+            style="@style/Option.Field"
+            android:layout_width="290dp"
+            android:background="#202020"
+            android:hint="(Optional) Enter a URL"
+            android:inputType="textUri"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Option"
+        android:background="#202020"
+        android:clickable="true">
+
+        <TextView
+            style="@style/Option.Label"
+            android:background="#121212"
+            android:text="Sticker"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:editable="false"
+            android:gravity="center"
+            android:text="    (Optional) Custom Sticker"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Switch
+            android:id="@+id/send_sticker_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/padding"
+            android:fontFamily="sans-serif"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        style="@style/Option"
+        android:background="#0E0E0E">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/FAQ"
+            android:layout_width="59dp"
+            android:layout_height="56dp"
+            android:layout_gravity="left"
+            android:text="FAQ" />
+
+        <TextView
+            android:id="@+id/share_button"
+            style="@style/ShareButton"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="84dp"
+            android:layout_height="88dp"
+            android:layout_gravity="right"
+            android:translationX="-2dp"
+            android:translationY="2dp"
+            app:srcCompat="@drawable/ic_launcher_round" />
+
+    </FrameLayout>
+
+</LinearLayout>
