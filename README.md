@@ -1,7 +1,7 @@
 # ChickenCam for Android - September 2020
     
 ## What's new?
-    * Cleaned UI
+    * Cleaned UI - Not complete yet
     * Added FAQ
     * Autocrop soon
     
@@ -29,7 +29,7 @@ No, this is a revamped version of Snapchat's creative sample app. Meaning Snapch
 ## Could you build it for me?
 No
 
-## FAQ
+## FAQ/Common Issues
 
 ### Why do my stories show "from *APP_NAME*"?
 Because Snapchat requires all their developer apps to say this. You can workaround this, however. There are two methods which the first works best.
@@ -58,3 +58,9 @@ On your pc navigate through the project's folder:
     ChickenCam-2020\android\creative-sample-app\src\main\assets\
 
 Replace stickers.png WITH the same name.
+
+### It says "error while parsing the package" when I try to install
+Try checking both v1 and v2 when building apk.
+
+### Invalid VCS Root Mapping
+Delete vcs.xml in android>.idea
