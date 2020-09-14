@@ -40,8 +40,9 @@ Because Snapchat requires all their developer apps to say this. You can workarou
   3. Exit the photo and go to memories and upload the same photo/image.
 
 * Renaming app name - this won't remove "from" but will change what it says its from
-  1. Open project in andrid studio and navigate to: 
-     res>values>strings.xml
+  1. Open project in andrid studio and navigate to
+  
+          res>values>strings.xml
   2. Change the 2nd line. The default is "Camera" *(from camera)*
   
 ### Why do my photos/vids have black borders?
