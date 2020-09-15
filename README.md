@@ -1,9 +1,12 @@
 # ChickenCam for Android - September 2020
     
 ## What's new?
+    * Support for Android 11
     * Cleaned UI - Not complete yet
     * Added FAQ
-    * Autocrop soon
+    
+    * Autocrop SOON
+    * Upload directly from Stock Camera SOON
     
 ## What is ChickenCam?
 Chickencam is a Snapchat tool that allows users to send gallery images and videos or custom stickers to friends using Snapchat's SDK. Normally doing so would cause Snapchat to send images in a text chat or Snapchat stories to have "from Gallery" text.
@@ -26,8 +29,8 @@ No, this is a revamped version of Snapchat's creative sample app. Meaning Snapch
 6. Go to the top in Android Studio Build>Generate Signed APK. Choose APK>Create Keypath. (Keypath doesn't matter make your own).
 7. Hit release and v2 Full APK and move the APK to your phone and install. That's it.
 
-## Could you build it for me?
-No
+## Could you install it for me?
+No.
 
 ## FAQ/Common Issues
 
@@ -62,6 +65,15 @@ Replace stickers.png WITH the same name.
 
 ### It says "error while parsing the package" when I try to install
 Try checking both v1 and v2 when building apk.
+
+### It says "Something went wrong" when I upload to Snapchat
+Either you didn't switch on Android, copy the right auth code, or didn't put your username in Snapkit.
+
+### Generate Signed APK is not showing for me
+Make sure you installed your correct SDKs for your Phone's OS Version after restart. If it still doesn't show reinstall Android Studio.
+
+### How do I install after building
+Do not use the jks file. Send the APK file to your phone and install on your phone.
 
 ### Invalid VCS Root Mapping
 Delete vcs.xml in android>.idea
