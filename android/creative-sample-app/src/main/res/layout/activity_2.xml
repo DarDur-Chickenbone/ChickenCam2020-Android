@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    android:persistentDrawingCache="scrolling"
     android:scrollbars="vertical"
     android:verticalScrollbarPosition="right"
     tools:context=".Activity2">
@@ -13,167 +12,241 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="34dp"
             android:background="#121212"
+            android:clickable="true"
             android:gravity="center"
-            android:text="ChickenCam - Frequently Asked Questions"
+            android:overScrollMode="always"
+            android:text="ChickenCam"
             android:textAlignment="center"
             android:textColor="#FFEB3B"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:focusable="true" />
 
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato_bold"
-            android:text='Why do my stories are showing "from ____]"?'
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:translationY="5dp" />
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato"
-            android:lineSpacingExtra=".5sp"
-            android:text="     There are two methods to stop this (only do this for stories). \n\n     A. Memory Method\n         1. Upload using Chickencam\n         2. Finish editing the photo and save the photo to memories.\n         3. Exit and upload the photo you just saved inside memories\n\n     B. Change the name of the app\n         1.Inside Android Studio navigate to: \n           creative-sample-app>res>values>strings.xml\n         2. Change app name on the second line"
-            android:textColor="#FFFFFF"
-            android:translationY="8dp" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
-            android:layout_height="214dp"
-            android:contentDescription="Examples of App Names"
-            android:translationY="10dp"
-            app:srcCompat="@drawable/stopaskingaboutthis" />
-
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="396dp"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textColor="#FFFFFF"
-            android:textSize="13sp"
-            android:translationX="87dp"
-            android:translationY="-185dp" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato_bold"
-            android:text="Why are there borders around my photos?"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:translationX="5dp"
-            android:translationY="-10dp" />
-
-        <TextView
-            android:id="@+id/textView25"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato"
-            android:lineSpacingExtra="1sp"
-            android:text="Crop the photo or video to your phone's dimensions. You can quickly find out by googling it or saving a photo from Snapchat and looking at it's dimension size."
-            android:textColor="#FFFFFF"
-            android:translationX="5dp"
-            android:translationY="-5dp" />
-
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato_bold"
-            android:text="How do I use the custom sticker?"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:translationX="5dp" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato"
-            android:lineSpacingExtra="1sp"
-            android:text="Replace sticker.png in Android Studio in creative-sample-app>assets\nGIFs are only supported by iOS right now"
-            android:textColor="#FFFFFF"
-            android:translationX="5dp"
-            android:translationY="5dp" />
-
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato_bold"
-            android:text="Why won't my video won't upload?"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:translationX="5dp"
-            android:translationY="10dp" />
-
-        <TextView
-            android:id="@+id/textView31"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato"
-            android:lineSpacingExtra="1sp"
-            android:text="Because Snapchat. Trim your video to 10 second parts and compress it below 10mb. Upload each part one by one."
-            android:textColor="#FFFFFF"
-            android:translationX="5dp"
-            android:translationY="15dp" />
-
-        <TextView
-            android:id="@+id/textView50"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato_bold"
-            android:text="Could I be banned for using this?"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:translationX="5dp"
-            android:translationY="20dp" />
-
-        <TextView
-            android:id="@+id/textView51"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato"
-            android:lineSpacingExtra="1sp"
-            android:text="No, this app is just a revamped version of Snapchat's Sample App"
-            android:textColor="#FFFFFF"
-            android:translationX="5dp"
-            android:translationY="25dp" />
+        <ImageButton
+            android:id="@+id/buttonn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:background="#00FFFFFF"
+            android:contentDescription="back button"
+            android:translationY="-30dp"
+            app:srcCompat="@drawable/back"
+            tools:srcCompat="@drawable/back" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/lato_bold"
-            android:text="What is your Discord?"
+            android:layout_height="73dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text='Why does my story show "from app_name" when I upload from here?'
             android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:translationX="5dp"
-            android:translationY="30dp" />
+            android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Snapchat requires all dev apps to show this. However there are ways to stop this"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato"
-            android:lineSpacingExtra="1sp"
-            android:text="Chickencam:8181"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text='Memory Method (Removes "from")'
             android:textColor="#FFFFFF"
-            android:translationX="5dp"
-            android:translationY="25dp" />
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="1. Upload your photo to Snapchat\n2. Finish editing and save to memories\n3. Exit and quickly upload the same image/vid to story from memories"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Change the APP_NAME (Doesn't remove &quot;from&quot;)"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text='1. In Android Studio navigate to: \n res>values>strings.xml\n2. Change 2nd line "app_name" to whatever you want'
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Your current app_name is:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/app_name"
+            android:textColor="#FFEB3B"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Why are there borders around my photos?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Crop the photo or video to your phone's dimensions. You can quickly find out by googling it or saving a photo from Snapchat and looking at it's dimension size."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="How do I use the custom sticker?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Replace sticker.png in Android Studio in creative-sample-app>assets\nGIFs are only supported by iOS right now"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Why won't my video won't upload?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Because Snapchat. Trim your video to 10 second parts and compress it below 10mb. Upload each part one by one."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Could I be banned for using this?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="No this is Snapchat's own developer app, just revamped. If you do get banned it's for antother reason. Are you rooted? Are people reporting what you post on your story? Don't complain to me if you do, since there's no way you get banned from Chickencam."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Discord - Chickencam#8181"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:fontFamily="@font/lato"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Youtube - Chickencam"
+            android:textColor="#E91E63"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="  Chickencam v.69"
+            android:textColor="#FFFFFF" />
 
     </LinearLayout>
-
 </ScrollView>

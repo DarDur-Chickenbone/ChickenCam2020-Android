@@ -12,14 +12,19 @@ import com.snapchat.kit.sdk.creative.models.SnapLiveCameraContent;
 import com.snapchat.kit.sdk.creative.models.SnapPhotoContent;
 import com.snapchat.kit.sdk.creative.models.SnapVideoContent;
 
+import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Camera;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -40,10 +45,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+
 public class MainActivity extends AppCompatActivity {
+
 
     public enum SnapState {
         NO_SNAP("Clear Snap"),
+        CAMERA("Take Photo with Stock Camera SOON"),
         IMAGE("Select Image"),
         VIDEO("Select Video");
 
@@ -65,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String SNAP_NAME = "snap";
     private static final String STICKER_NAME = "sticker";
+    static final int REQUEST_IMAGE_CAPTURE = 1;
+
 
     private SnapState mSnapState = SnapState.NO_SNAP;
     private File mSnapFile;
@@ -118,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
         findViewById(R.id.share_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -147,8 +156,8 @@ public class MainActivity extends AppCompatActivity {
                     if (mSendStickerOption.isChecked()) {
                         final SnapSticker snapSticker = snapMediaFactory.getSnapStickerFromFile(mStickerFile);
 
-                        snapSticker.setHeight(1728);
-                        snapSticker.setWidth(3648);
+                        snapSticker.setHeight(300);
+                        snapSticker.setWidth(300);
                         snapSticker.setPosX(0.2f);
                         snapSticker.setPosY(0.8f);
                         snapSticker.setRotationDegreesClockwise(345.0f);
@@ -168,14 +177,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 openActivity2();
             }
+
+
         });
     }
 
     public void openActivity2() {
-        Intent intent = new Intent (MainActivity.this, Activity2.class);
+        Intent intent = new Intent(MainActivity.this, Activity2.class);
         startActivity(intent);
     }
-
 
 
     @Override
@@ -199,6 +209,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
     private void openMediaSelectDialog() {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.select_dialog_item);
 
@@ -214,6 +225,9 @@ public class MainActivity extends AppCompatActivity {
                             case IMAGE:
                                 selectMediaFromGallery("image/*", SnapState.IMAGE.getRequestCode());
                                 break;
+                            case CAMERA:
+                                dispatchTakePictureIntent("camera/*", SnapState.CAMERA.getRequestCode());
+                                break;
                             case VIDEO:
                                 selectMediaFromGallery("video/*", SnapState.VIDEO.getRequestCode());
                                 break;
@@ -225,17 +239,25 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
+    private void dispatchTakePictureIntent(String mimeType, int resultCode) {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if(mimeType == "camera/*")
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+        }
+
+
+    }
+
     private void selectMediaFromGallery(String mimeType, int resultCode) {
         Intent intent = new Intent(Intent.ACTION_PICK);
-        if (mimeType == "image/*"){
+        if (mimeType == "image/*") {
             intent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, mimeType);
-        }
-        else {
+        } else {
             intent.setDataAndType(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, mimeType);
         }
         startActivityForResult(intent, resultCode);
     }
-
     private void handleImageSelect(@Nullable Intent intent) {
         if (saveContentLocally(intent)) {
             reset();
@@ -296,7 +318,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     private static void copyFile(InputStream inputStream, File file) throws IOException {
         byte[] buffer = new byte[1024];
         int length;
@@ -308,6 +329,3 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
-
-
-

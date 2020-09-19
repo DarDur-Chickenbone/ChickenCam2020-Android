@@ -157,10 +157,11 @@
         <TextView
             android:id="@+id/share_button"
             style="@style/ShareButton"
-            android:layout_width="56dp"
+            android:layout_width="223dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:gravity="left"
+            android:text="Upload to Snapchat"
             android:textSize="18sp"
             android:textStyle="bold" />
 
