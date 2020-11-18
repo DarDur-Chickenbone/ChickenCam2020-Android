@@ -1,5 +1,5 @@
-# ChickenCam for Android - September 2020
-    
+# ChickenCam for Android - November 2020
+### [NEW VIDEO](https://www.youtube.com/watch?v=2FkhBCqLKNY)
 ## What's new?
     * Support for Android 11
     * Cleaned UI - Not complete yet
@@ -20,7 +20,7 @@ While others would charge you for Snapchat's own app Chickencam is completely op
 ## Could I be banned for using this?
 No, this is a revamped version of Snapchat's creative sample app. Meaning Snapchat would ban you for using their own app. Posting nasty things however will get you banned if people report you.
 
-## How do I install? [Video to be updated soon](https://www.youtube.com/watch?v=2FkhBCqLKNY)
+## How do I install?
 1. Create an account at kit.snapchat.com
 2. Create app and scroll to development enviroment. Inside android package type "com.snapchat.kit.chickencam" and switch it on.
 3. Download this zip and install Android Studio. In Android Studio install your phone's SDK (your phone's android version).
